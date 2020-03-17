@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_element"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -29,6 +30,7 @@
             android:id="@+id/textViewLoginXML"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/cabin"
             android:text="Login Page"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -64,26 +66,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
                 android:layout_weight="3"
+                android:background="@drawable/btn_style_pressed_and_not_pressed"
+                android:fontFamily="@font/cabin"
                 android:gravity="center"
                 android:padding="18dp"
                 android:text="ВОЙТИ"
-                android:background="@drawable/btn_style_pressed_and_not_pressed"
                 android:textSize="16sp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
+                android:background="@drawable/btn_style_pressed_and_not_pressed"
+                android:fontFamily="@font/cabin"
                 android:gravity="center"
                 android:padding="18dp"
                 android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
-                android:background="@drawable/btn_style_pressed_and_not_pressed"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -92,6 +96,7 @@
             android:id="@+id/signInTextViewXML"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/cabin"
             android:gravity="center"
             android:text="Войдите в свою учетную запись!"
             android:textSize="16sp" />
